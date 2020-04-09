@@ -11,3 +11,10 @@ WHEN I click the save button for that timeblock
 THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist
+
+* On page load: hourly schedule loads for current day.
+* Left column lists hours
+* Center column lists entries
+* Right column lists buttons to safe the content of their respective rows
+* Color coding for importance
+* localMemoy persists
