@@ -16,5 +16,6 @@ THEN the saved events persist
 * Left column lists hours
 * Center column lists entries
 * Right column lists buttons to safe the content of their respective rows
-* Color coding for importance
+* Color coding for past/present/future
 * localMemoy persists
+* use moment.js for date/time functionality
