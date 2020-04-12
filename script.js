@@ -9,43 +9,24 @@ $(document).ready(function() {
     
     }
 
-
+    $(".saveBtn").on("click", function() {
+        var time = $(this).parent().attr("id");
+        var data = $(this).siblings("input").val();
+        localStorage.setItem(time, data);
+        console.log(time, data);
+    });
+    
+      $("#9").children("input").val(localStorage.getItem("9"));
+      $("#10").children("input").val(localStorage.getItem("10"));
+      $("#11").children("input").val(localStorage.getItem("11"));
+      $("#12").children("input").val(localStorage.getItem("12"));
+      $("#1").children("input").val(localStorage.getItem("1"));
+      $("#2").children("input").val(localStorage.getItem("2"));
+      $("#3").children("input").val(localStorage.getItem("3"));
+      $("#4").children("input").val(localStorage.getItem("4"));
+      $("#5").children("input").val(localStorage.getItem("5"));
 
 })
 
 
-// $(".saveBtn").on("click", function() {
-//     var entry = $("#9am").parent().attr("id");
-//     var data = $("textarea").val();
-//     localStorage.setItem(entry, data);
-//     console.log(entry);
-// })
 
-// $("#9am").children("textarea").val(localStorage.getItem("9am"));
-
-$(".saveBtn").on("click", function() {
-    var timeOfday = $(this).parent().attr("id");
-    var textContent = $(this).siblings("input").val();
-
-    localStorage.setItem(timeOfday, textContent);
-    console.log(timeOfday, textContent);
-});
-
-//-------Getting individual childern and setting to parent-----//
-  $("#9am").children("input").val(localStorage.getItem("9am"));
-
-  $("#10am").children("input").val(localStorage.getItem("10am"));
-
-  $("#11am").children("input").val(localStorage.getItem("11am"));
-
-  $("#12pm").children("input").val(localStorage.getItem("12pm"));
-
-  $("#1pm").children("input").val(localStorage.getItem("1pm"));
-
-  $("#2pm").children("input").val(localStorage.getItem("2pm"));
-
-  $("#3pm").children("input").val(localStorage.getItem("3pm"));
-
-  $("#4pm").children("input").val(localStorage.getItem("4pm"));
-
-  $("#5pm").children("input").val(localStorage.getItem("5pm"));
